@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Stockgyani </title>
+	
+	
+	
+    <link rel="stylesheet" href="index.css" />
+    <script rel="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+	<script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
+    
+    
+    <script src="index.js" type="text/javascript"></script>
+	
+</head>
+
+	<body>
+	    <div class="container">
+            <div class="header">
+                <p id="addSet">Add Set</p>
+                <p id="test">Test</p>
+            </div>
+	        <!--===============TOP HALF BEGINS HERE ================-->
+            <div class="top">
+            
+            
+            <!============================Controls============================-->
+	            
+                   <div class="controls">
+                        <div class="title">
+                            <p>Control Panel<p>
+                        </div>
+                        <div class="upper">
+                            <div class="title"><p>Dassault Systemes</p></div>
+                            <div class="radio"><input type="radio"
+                                                id="dasty"
+                                                name="check"
+                                                value="dasty"
+                                                checked="checked"
+                                                />
+                            </div>
+                            <div class="upper-controls">
+                                <input class="ds" type="checkbox" id="high" name="high" value="high" checked><span class="options">
+                                                                                        Highest
+                                                                                </span><br>
+                                <input class="ds" type="checkbox" id="low" name="low" value="low"><span class="options">
+                                                                                        Lowest
+                                                                                </span><br>
+                                <input class="ds" type="checkbox" id="open" name="open" value="open"><span class="options">
+                                                                                        Open
+                                                                                </span><br>
+                                <input class="ds" type="checkbox" id="close" name="close" value="close"><span class="options">
+                                                                                        Close
+                                                                                </span><br>
+                            </div>
+
+                        </div>
+                        <div class="lower">
+                            <div class="title"><p>ComparOmeter</p></div>
+                            <div class="radio"><input type="radio"
+                                                id="check"
+                                                name="check"
+                                                value="compare"
+                                                />
+                            </div>
+                            <div class="upper-controls">
+                                <input class="c" type="checkbox" id="D" name="D" value="high" checked><span class="options">
+                                                                            Dassault Systemes       
+                                                                                </span><br>
+                                <input class="c" type="checkbox" id="S" name="S" value="low"><span class="options">
+                                                                            Siemens
+                                                                                </span><br>
+                                <input class="c" type="checkbox" id="P" name="P" value="open"><span class="options">
+                                                                            PTC
+                                                                                </span><br>
+                                <input class="c" type="checkbox" id="A" name="A" value="close"><span class="options">
+                                                                            Ansys
+                                                                                </span><br>
+                                <input class="c" type="checkbox" id="Ak" name="Ak" value="close"><span class="options">
+                                                                            Autodesk
+                                                                                </span><br>
+                            </div>
+                        </div>
+	                </div>
+	            
+	            <!===============================End of Controls============================-->
+	            
+                
+                <div class="main">
+	                <div class="graph">
+		                <canvas id="myChart"></canvas>
+                    </div>
+                    <div class="details"></div>
+                </div>
+            </div>
+            <!--===================TOP ends here===============-->
+            
+            
+		
+            <div class="footer">
+                <div class="circle">
+                   <div class="test"></div>
+                    <div class="inner-circle">
+                        <div class="logo"><p>Stock</p></div>
+                    </div>
+                </div>
+            </div>  
+       
+        </div>
+	</body>
+
+</html>
